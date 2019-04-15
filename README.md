@@ -1,2 +1,2 @@
-# AcerZhou.github.io
-Acer's Blog
+# Profile
+This project is my personal web page.
