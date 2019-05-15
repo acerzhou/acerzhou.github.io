@@ -1,3 +1,20 @@
+body {
+  overflow-y:hidden;
+  height: 100%
+}
+
+html {
+  height: 100%
+}
+
+.centerBlock {
+  display: table;
+  margin: auto;
+}
+ 
+.fab, .fas {
+  color: black
+}
  /* Split the screen in half */
  .split {
     height: 100%;
@@ -12,7 +29,7 @@
   /* Control the left side */
   .left {
     left: 0;
-    background-image: url("./assets/acer-zhou.jpg");
+    /* background-image: url("./assets/acer-zhou.jpg"); */
     background-size: cover;
   }
 
@@ -29,10 +46,11 @@
   /* Control the right side */
   .right {
     right: 0;
+    background-color: whitesmoke
   }
   
   /* If you want the content centered horizontally and vertically */
-  .centered {
+  .centred {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,8 +58,16 @@
     text-align: center;
   }
   
+  .vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
   /* Style the image inside the centered container, if needed */
-  .centered img {
+  .centred img {
     width: 150px;
     border-radius: 50%;
   } 
@@ -81,12 +107,14 @@
   /* Location */
   h1 {
     margin: 10px;
+    font-size:10vw;
   }
   h3 {
     display: inline-block; /* to make it inline */
     margin: 10px;
     font-weight:normal;
     color:gray;
+    font-size: 6vw;
   }
 
   .fa-map-marker-alt {
@@ -98,4 +126,7 @@
     margin: 10px;
   }
 
+  .blah2 {
+    align-items: center
+  }
   
