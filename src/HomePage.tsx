@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { MdEmail } from "react-icons/md";
 import { FaBloggerB, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -63,7 +63,6 @@ export default function HomePage({ setPage }: Props) {
   const [language, setLanguage] = useState<"english" | "chinese">(
     LANGUAGE_ENGLISH
   );
-
   return (
     <Wrapper>
       <ContentWrapper>
