@@ -58,16 +58,10 @@ const content = {
 interface Props {
   setPage: (page: Page) => void;
 }
-interface ILine {
-  isActive: boolean;
-  setActiveComponent: Dispatch<SetStateAction<"line" | "position">>;
-}
+
 export default function HomePage({ setPage }: Props) {
   const [language, setLanguage] = useState<"english" | "chinese">(
     LANGUAGE_ENGLISH
-  );
-  const [activeComponent, setActiveComponent] = useState<"line" | "position">(
-    "line"
   );
 
   return (
